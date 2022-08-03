@@ -1,9 +1,7 @@
-let firstName = "Bro"
-let age = 21
-let student = true
-age = age + 1
-console.log("Hello", firstName)
-console.log("You are", age, "years old")
-console.log("Enrolled:", student)
+let username
 
-document.getElementById("p1").innerHTML = "This is the new p1";
+document.getElementById("myButton").onclick = function(){
+    username = document.getElementById("myText").value
+    console.log(username)
+    document.getElementById("myLabel").innerHTML = "You entered: " + username
+}
